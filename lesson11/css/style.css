@@ -2,20 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,400&family=Lato:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,700;1,300;1,400;1,500&family=Lato:wght@900&display=swap');
 
-/* body {
-
-	background-image: url('../img/bg.jpg');
-	background-repeat: no-repeat;
-	background-size: 1400px 500px;	
-} */
 .wrapper {
-	overflow: hidden;
 	position: relative;
+	overflow: hidden;
 	min-height: 100%;
 	/* padding: 40px; */
 }
 [class*="__container"] {
-	max-width: 930px;
+	max-width: 1230px;
 	min-height: 100%;
 	margin: 0 auto;
 }
@@ -40,7 +34,7 @@
 	display: inline-block;
 }	
 .menu__item:not(:last-child){
-margin-right: 193px;
+margin-right: 400px;
 }
 .sub-menu {
 position: absolute;
@@ -83,13 +77,13 @@ visibility: hidden;
 
 }
 .main {
-	background: url(../img/bg.jpg) 100%/100% no-repeat ;
+	background: url(../img/bg.jpg) 0 0  no-repeat;
+	height: 100%;
 }
 .main__car {
 	position: relative;
 	height: 740px;
-	margin: 20px;
-}
+	}
 .car__body {
 		border-radius: 20% 65% 65% 65% / 20% 100% 50% 50%;
 		position: absolute;
@@ -175,7 +169,7 @@ visibility: hidden;
 		position: absolute;
 		bottom: 156px;
 		left: 309px;
-		z-index: 3;
+		z-index: 4;
 	}
 	.disk--2 {
 		width: 85px;
@@ -186,18 +180,20 @@ visibility: hidden;
 		position: absolute;
 		bottom: 164px;
 		left: 317px;
-		z-index: 3;
+		z-index: 5;
 	}
 	.disk--3 {
 		width: 70px;
 		height: 70px;
 		background-color: rgb(233, 230, 230);
+		z-index: 5;
 	}
 	.car__wheels--left .disk--4 {
 		position: absolute;
 		bottom: 179px;
 		left: 332px;
-		z-index: 4;
+		z-index: 6;
+		transform: rotate(340deg);
 	}
 	.disk--4 {
 	width: 40px;
@@ -269,7 +265,7 @@ visibility: hidden;
 	.car__headlight-top {
 		position: absolute;
 		bottom: 270px;
-		left: 863px;
+		left: 853px;
 		width: 30px;
 		height: 20px;
 		border-radius: 20% 80% 16% 84% / 60% 100% 0% 40%;
@@ -279,7 +275,7 @@ visibility: hidden;
 	}
 	.car__headlight-behind {
 		position: absolute;
-		bottom: 300px;
+		bottom: 290px;
 		left: 200px;
 		width: 30px;
 		height: 20px;
